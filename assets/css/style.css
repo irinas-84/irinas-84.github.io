@@ -1,0 +1,41 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+.carousel-control-next-icon {
+    background-image: url('../img/right-arrow.png');
+}
+
+.carousel-control-prev-icon {
+  background-image: url('../img/left-arrow.png');
+}
+
+section.header div.hero {
+  background-image: url('../img/bg.jpg');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 100%;
+  text-align: center;
+  color: #fff;
+  padding: 10%;
+}
+
+section.header div.hero p {
+  font-size: 110%;
+}
+
+section.body {
+  margin-top: 2rem;
+}
+
+.my-works {
+  margin-top: 5rem;
+}
+
+
+.my-works img {
+  width: 500px;
+
+}
