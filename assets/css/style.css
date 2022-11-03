@@ -39,3 +39,30 @@ section.body {
   width: 500px;
 
 }
+
+a.phone-call,
+a.email-send {
+  display: inline-block;
+  width: 100px;
+  height: 100px;
+  background-image: url('../img/icons.svg');
+  background-repeat: no-repeat;
+  background-size: 1000px;
+  text-decoration: none;
+}
+
+a.phone-call {
+  background-position: -172px -42px;
+}
+
+a.phone-call:hover {
+  background-position: -172px -303px;
+}
+
+a.email-send {
+  background-position: -310px -42px;
+}
+
+a.email-send:hover {
+  background-position: -310px -303px;
+}
