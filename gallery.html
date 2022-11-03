@@ -6,6 +6,7 @@
     <title>Портфолио</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
+    <link rel="stylesheet" type="text/css" href="./assets/css/slider.css">
   </head>
   <body>
 
@@ -30,11 +31,11 @@
             </li>
 
             <li class="nav-item">
-              <a class="nav-link" href="gallery.html">Галерея</a>
+              <a class="nav-link active" href="gallery.html">Галерея</a>
             </li>
 
             <li class="nav-item">
-              <a class="nav-link active" href="three-js.html">ThreeJS</a>
+              <a class="nav-link" href="three-js.html">ThreeJS</a>
             </li>
 
             <!-- 
@@ -67,33 +68,56 @@
       </div>
     </nav>
 
+
+    <section class="body">
+      
+      <div class="container">
+        <div class="slider">
+          <div class="slider_body">
+            <div class="slider_wrapper">
+              <div class="slider_item">
+                <img src="./assets/img/photo-1661956602153-23384936a1d3.avif">
+                <div><span>Image 1</span></div>
+              </div>
+
+              <div class="slider_item">
+                <img src="./assets/img/photo-1661961111184-11317b40adb2.avif">
+                <div><span>Image 2</span></div>
+              </div>
+
+              <div class="slider_item">
+                <img src="./assets/img/photo-1665686376173-ada7a0031a85.avif">
+                <div><span>Image 3</span></div>
+              </div>
+
+              <div class="slider_item">
+                <img src="./assets/img/photo-1665686376173-ada7a0031a85.avif">
+                <div><span>Image 4</span></div>
+              </div>
+
+              <div class="slider_item">
+                <img src="./assets/img/photo-1661956602153-23384936a1d3.avif">
+                <div><span>Image 5</span></div>
+              </div>
+
+              <div class="slider_item">
+                <img src="./assets/img/photo-1665686376173-ada7a0031a85.avif">
+                <div><span>Image 6</span></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="slider_buttons">
+            <button type="buttton" class="btn btn-default button_prev">назад</button>
+            <button type="buttton" class="btn btn-default button_next">вперед</button>
+          </div>
+        </div>
+      </div>
+     
+    </section>
+
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
-    <script src="./assets/js/three.min.js"></script>
-		<script>
-			const scene = new THREE.Scene();
-			const camera = new THREE.PerspectiveCamera( 75, window.innerWidth / window.innerHeight, 0.1, 1000 );
-
-			const renderer = new THREE.WebGLRenderer();
-			renderer.setSize( window.innerWidth, window.innerHeight );
-			document.body.appendChild( renderer.domElement );
-
-			const geometry = new THREE.BoxGeometry( 1, 1, 1 );
-			const material = new THREE.MeshBasicMaterial( { color: 0x00ff00 } );
-			const cube = new THREE.Mesh( geometry, material );
-			scene.add( cube );
-
-			camera.position.z = 5;
-
-			function animate() {
-				requestAnimationFrame( animate );
-
-				cube.rotation.x += 0.01;
-				cube.rotation.y += 0.01;
-
-				renderer.render( scene, camera );
-			};
-
-			animate();
-		</script>
-	</body>
+    <script type="text/javascript" src="./assets/js/slider.js"></script>
+  </body>
 </html>
